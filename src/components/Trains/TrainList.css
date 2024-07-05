@@ -1,0 +1,28 @@
+.flight__container{
+    width: 100%;
+    background: #fff;
+}
+.flight{
+    margin: 0 7rem;
+    padding: 3rem 0;
+}
+.flight > h3{
+   font-size: 2rem;
+   font-weight: 700;
+   margin-bottom: 2rem;
+   color: #3570ca;
+}
+.flight__cards{
+ width: 60%;
+ margin: auto;
+}
+@media only screen and (max-width: 768px) {
+    .flight__cards{
+        width: 100%;
+    }
+    .flight{
+        margin: 0 1.5rem;
+        
+    }
+   
+}

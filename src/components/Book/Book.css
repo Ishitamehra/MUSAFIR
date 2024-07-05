@@ -1,0 +1,191 @@
+.payment-container {
+  width: 100%;
+  height: 100vh; /* Ensure it covers the full viewport height */
+  position: relative;
+  background-image: url("../clipart.jpg"); /* Add your image URL here */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  height: 430px;
+  width: 40%;
+  background-color: rgba(29, 99, 34, 0.8);
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 16px; /* Base font size for the main container */
+  font-weight: bold; /* Make all text inside .main bold */
+  padding: 20px;
+}
+
+.right-payment-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  margin: auto;
+  font-weight: bold; /* Make all text inside .right-payment-info bold */
+}
+
+.payment-method h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem; /* Increased font size for headers */
+  font-weight: 700;
+  font-weight: bold; /* Make header text bold */
+}
+
+.radio-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-weight: bold; /* Make all text inside .radio-container bold */
+}
+
+.radio-container label:not(:last-child) {
+  margin-right: 20px;
+  font-weight: bold; /* Make label text bold */
+}
+
+.card-info-container {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-weight: bold; /* Make all text inside .card-info-container bold */
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+  font-weight: bold; /* Make all text inside .card-info bold */
+}
+
+.card-info label {
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  font-size: 1.5rem;
+  font-weight: bold; /* Make label text bold */
+}
+
+.card-info input {
+  margin-top: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  letter-spacing: 0.025em;
+  height: 25px;
+  font-weight: bold; /* Make input text bold */
+}
+
+.card-info input[type="text"] {
+  outline: none;
+  padding: 1.5rem;
+  font-size: 1.2rem; /* Increased font size for text inputs */
+  font-weight: bold; /* Make text input text bold */
+}
+
+.full-width {
+  width: 200px;
+  padding-left: 5px;
+  font-weight: bold; /* Make all text inside .full-width bold */
+}
+
+.expire-ccv {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold; /* Make all text inside .expire-ccv bold */
+}
+
+.expire-ccv input {
+  text-align: center;
+  font-weight: bold; /* Make input text bold */
+}
+
+.expire-ccv label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold; /* Make label text bold */
+}
+
+.expire-date {
+  border: 1px solid #333333;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-weight: bold; /* Make all text inside .expire-date bold */
+}
+
+.expire-date input {
+  margin: 0;
+  border: none;
+  font-weight: bold; /* Make input text bold */
+}
+
+.expire-date span {
+  font-size: 1rem; /* Increased font size for span */
+  font-weight: 700;
+  font-weight: bold; /* Make span text bold */
+}
+
+.save-card-info {
+  display: flex;
+  align-items: center;
+  font-size: 1rem; /* Increased font size for save card info */
+  gap: 5px;
+  margin-top: 15px;
+  letter-spacing: 0.025em;
+  font-weight: bold; /* Make all text inside .save-card-info bold */
+}
+
+input {
+  background-color: #f7f7f7;
+  font-weight: bold; /* Make input text bold */
+}
+
+input:focus {
+  outline: none;
+  font-weight: bold; /* Make focused input text bold */
+}
+
+.button {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8rem; /* Increased font size for buttons */
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.05em;
+  color: #f7f7f7;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(78, 172, 253, 255),
+    rgba(8, 92, 243, 255)
+  );
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: bold; /* Make button text bold */
+}
+
+button:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(8, 92, 243, 200),
+    rgba(8, 92, 243, 200)
+  );
+  font-weight: bold; /* Make hovered button text bold */
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    width: 90%;
+  }
+}

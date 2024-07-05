@@ -1,0 +1,102 @@
+.register {
+  background-image: url("../clipart.jpg"); /* Replace with your outer background image path */
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register__container {
+  width: 350px;
+  height: 350px;
+  background-color: rgba(29, 99, 34, 0.4);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px; /* Adjust padding as needed */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Example box shadow */
+}
+
+.register__container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  background: white;
+  border: 1px solid grey;
+}
+
+.register__img {
+  margin-top: 20px;
+  padding: 30px auto;
+}
+
+.register__img > img {
+  width: 50%;
+}
+
+.register p {
+  color: rgb(18, 83, 18);
+  font-size: 4rem;
+}
+
+.register h3 {
+  color: rgba(0, 0, 0, 0.717);
+  font-size: 2.5rem;
+}
+
+.btn {
+  padding: 1rem 4rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(78, 172, 253, 255),
+    rgba(8, 92, 243, 255)
+  );
+  margin-top: 20px; /* Add margin to separate buttons */
+}
+
+.btn:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(8, 92, 243, 200),
+    rgba(8, 92, 243, 200)
+  );
+}
+
+.login-btn {
+  padding: 1rem 4rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(253, 78, 102, 255),
+    rgba(243, 8, 8, 255)
+  );
+}
+
+.login-btn:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(243, 8, 8, 200),
+    rgba(243, 8, 8, 200)
+  );
+}

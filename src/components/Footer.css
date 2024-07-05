@@ -1,0 +1,45 @@
+.footer__container{
+    width: 100%;
+    background-image: linear-gradient(rgba(6,20,36,255), rgba(20,68,122,255));
+    height: 40vh;
+    position: relative;
+}
+
+.footer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.footer__icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1rem;
+}
+.footer__icon > .MuiSvgIcon-root{
+    font-size: 3rem;
+}
+.footer__copy{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.footer__copy span{
+    padding: 1rem 1rem 1rem 0;
+}
+
+@media only screen and (max-width:768px){
+    .footer__container{
+        
+        height:100px;
+       
+    }
+   
+}

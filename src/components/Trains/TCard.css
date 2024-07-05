@@ -1,0 +1,107 @@
+.tcard__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px; /* Adjust padding for spacing between cards */
+}
+
+.tcard {
+  position: relative;
+  width: 800px; /* Fixed width for the card */
+  height: 400px; /* Fixed height for the card */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Soft shadow */
+}
+
+.tcard__background {
+  width: 100%;
+  height: 100%;
+  background-image: url("../train.png"); /* Replace with your background image path */
+  background-size: cover; /* Ensures the background image covers the entire card */
+  background-position: center;
+  border-radius: 10px; /* Ensure border-radius matches the card */
+}
+
+.tcard__info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  color: #000000; /* Text color */
+  background-color: rgba(96, 184, 102, 0.7); /* Semi-transparent background */
+  border-radius: 10px; /* Match border-radius for consistency */
+}
+
+.tcard__info .row:first-child {
+  margin-bottom: 10px;
+  font-weight: bold; /* Make the first row's text bold */
+  font-size: 18px;
+  color: #ffffff; /* Text color */
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000,
+    1px 1px 0 #000000; /* White shadow around all elements in the first row */
+}
+
+.tcard__info p {
+  margin: 5px 0;
+  font-size: 18px; /* Adjust font size as needed */
+  font-weight: bold;
+  color: #000000; /* Text color */
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #fffcfc, -1px 1px 0 #ffffff,
+    1px 1px 0 #fff1f1; /* White shadow around all elements in the first row */
+}
+
+.tcard__info span {
+  font-weight: bold;
+  font-size: 18px; /* Adjust font size as needed */
+  color: #000000; /* Text color */
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #fffcfc, -1px 1px 0 #ffffff,
+    1px 1px 0 #fff1f1; /* White shadow around all elements in the first row */
+}
+
+.tcard__btn {
+  position: absolute;
+  bottom: 20px; /* Adjust bottom position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  padding: 1rem 4rem;
+  font-size: 2rem;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(78, 172, 253, 1),
+    rgba(8, 92, 243, 1)
+  );
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none; /* Ensure links are not underlined */
+}
+
+.tcard__btn:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(78, 172, 253, 0.8),
+    rgba(8, 92, 243, 0.8)
+  );
+  cursor: pointer;
+}
+
+.tcard__btn a {
+  color: #fff; /* Link text color */
+  text-decoration: none; /* Remove underlines from links */
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .tcard {
+    width: 100%;
+    height: auto;
+  }
+}
