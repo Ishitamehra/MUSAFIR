@@ -1,7 +1,9 @@
 **Introduction**
+
 Musafir is your go-to travel website for booking flights, hotels, and trains. Built with modern web technologies, it aims to provide users with a smooth and engaging experience while planning their travels.
 
 **Features**
+
 
 1- **User Authentication**: Secure login and registration using Firebase Authentication.\
 
@@ -16,7 +18,9 @@ Musafir is your go-to travel website for booking flights, hotels, and trains. Bu
 6- **User-friendly Interface:** Designed with React and Material-UI for a modern look and feel.
 
 
+
 **Tech Stack**
+
 
 **Frontend:** React, Material-UI
 
