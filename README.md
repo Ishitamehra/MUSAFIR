@@ -22,7 +22,7 @@ Musafir is your go-to travel website for booking flights, hotels, and trains. Bu
 **Tech Stack**
 
 
-**Frontend:** React, Material-UI
+**Frontend:** React JS
 
 **Backend**: Firebase Authentication
 
